@@ -1,23 +1,18 @@
-package Pattern1;
+package Pattern;
 
-import java.util.Scanner;
+import java.util.*;
 
-public class Pattern1 {
+public class Pattern2 {
   public static void main(String args[]) {
     Scanner scn = new Scanner(System.in);
     System.out.print("Enter a number: ");
     int a = scn.nextInt();
-
-    // outer loop → controls number of rows
     for (int i = 1; i <= a; i++) {
-      // inner loop → prints stars in each row
-      for (int j = 1; j <= i; j++) {
+      for (int j = a; j >= i; j--) {
         System.out.print("*");
       }
-      // move to next line after each row
       System.out.println("");
     }
-
     scn.close();
   }
 }
