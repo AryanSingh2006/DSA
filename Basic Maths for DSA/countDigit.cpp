@@ -3,7 +3,7 @@ using namespace std;
 
 int countDigit(int num)
 {
-  int count = 0;
+  int count =0;
   while (num > 0)
   {
     num = num / 10;
