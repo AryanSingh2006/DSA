@@ -8,9 +8,7 @@ void sumOfN(int sum, int n)
     cout << sum;
     return;
   }
-  sum = sum + n;
-  n--;
-  sumOfN(sum, n);
+  sumOfN(sum + n, n-1);
 }
 
 int main()
