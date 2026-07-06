@@ -13,8 +13,9 @@ int main()
     cin >> arr[i];
   }
 
-  int hash[n] = {0};
-  for (int i = 0; i < n; i++)
+  //can only hash the number till 12
+  int hash[13] = {0};
+  for (int i = 0; i < 13; i++)
   {
     hash[arr[i]] += 1;
   }
