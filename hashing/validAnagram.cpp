@@ -1,19 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// bool isAnagram(string s, string t)
+// {
+//   map<int, int> mpp1;
+//   map<int, int> mpp2;
+//   for (char c : s)
+//   {
+//     mpp1[c]++;
+//   }
+//   for (char c : t)
+//   {
+//     mpp2[c]++;
+//   }
+//   return mpp1 == mpp2;
+// }
+
 bool isAnagram(string s, string t)
 {
-  map<int, int> mpp1;
-  map<int, int> mpp2;
-  for (char c : s)
+  int hash[26] = {0};
+  if (s.size() != t.size())
+    return false;
+  for (int i = 0; i < s.size(); i++)
   {
-    mpp1[c]++;
+    hash[s[i] - 'a']++;
+    hash[t[i] - 'a']--;
   }
-  for (char c : t)
+  for (int i = 0; i < 26; i++)
   {
-    mpp2[c]++;
+    if (hash[i] != 0)
+    {
+      return false;
+    }
   }
-  return mpp1 == mpp2;
+  return true;
 }
 
 int main()
