@@ -1,3 +1,29 @@
 {
-  "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
+  "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Generate commit messages for this DSA practice repository."
+    },
+    {
+      "text": "Use exactly this format: solve: <4-digit LeetCode problem number> <official LeetCode problem name>"
+    },
+    {
+      "text": "Always pad the LeetCode problem number to 4 digits. Example: problem 350 becomes 0350."
+    },
+    {
+      "text": "Use the official LeetCode problem title with correct capitalization."
+    },
+    {
+      "text": "Do not add a commit body, description, bullet points, emojis, scope, or extra text."
+    },
+    {
+      "text": "Example: solve: 0350 Intersection of Two Arrays II"
+    },
+    {
+      "text": "Example: solve: 0509 Fibonacci Number"
+    },
+    {
+      "text": "Example: solve: 0001 Two Sum"
+    }
+  ]
 }
