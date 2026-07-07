@@ -2,28 +2,124 @@
   "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "text": "Generate commit messages for this DSA practice repository."
+      "text": "Generate a single concise commit message for this DSA practice repository based only on the staged changes."
     },
     {
-      "text": "Use exactly this format: solve: <4-digit LeetCode problem number> <official LeetCode problem name>"
+      "text": "Analyze the staged file names, folder names, source code, comments, and git diff before generating the commit message."
     },
     {
-      "text": "Always pad the LeetCode problem number to 4 digits. Example: problem 350 becomes 0350."
+      "text": "Use lowercase commit types followed by a colon and one space."
     },
     {
-      "text": "Use the official LeetCode problem title with correct capitalization."
+      "text": "Use one of these commit types: solve, add, fix, optimize, refactor, docs."
     },
     {
-      "text": "Do not add a commit body, description, bullet points, emojis, scope, or extra text."
+      "text": "Use 'solve' when a new DSA problem, coding problem, or algorithm solution is added."
     },
     {
-      "text": "Example: solve: 0350 Intersection of Two Arrays II"
+      "text": "Use 'add' when adding a new alternative approach or implementation to an already solved problem."
     },
     {
-      "text": "Example: solve: 0509 Fibonacci Number"
+      "text": "Use 'fix' when correcting wrong logic, edge cases, overflow, indexing, conditions, or other bugs in an existing solution."
     },
     {
-      "text": "Example: solve: 0001 Two Sum"
+      "text": "Use 'optimize' when the primary change improves time complexity, space complexity, or algorithmic efficiency."
+    },
+    {
+      "text": "Use 'refactor' when restructuring or cleaning existing code without changing the algorithm or expected behavior."
+    },
+    {
+      "text": "Use 'docs' when the staged changes only update comments, explanations, notes, or documentation."
+    },
+    {
+      "text": "For a newly solved LeetCode problem, use exactly: solve: <4-digit problem number> <official LeetCode problem title>"
+    },
+    {
+      "text": "Always pad LeetCode problem numbers to exactly 4 digits. Example: 1 becomes 0001, 9 becomes 0009, 350 becomes 0350, and 509 becomes 0509."
+    },
+    {
+      "text": "For LeetCode problems, use the official problem title with correct capitalization when the problem identity is clearly available from the staged file name, code, or comments."
+    },
+    {
+      "text": "Never guess or invent a LeetCode problem number. If the LeetCode identity cannot be determined confidently from the staged changes, treat it as a normal DSA problem."
+    },
+    {
+      "text": "For a newly solved non-LeetCode DSA problem or algorithm, use: solve: <Problem or Algorithm Name>"
+    },
+    {
+      "text": "For non-LeetCode problems, infer a clean human-readable title from the file name, folder name, function name, class name, comments, and implementation."
+    },
+    {
+      "text": "Convert camelCase, snake_case, kebab-case, and file names into a clean title. Example: selectionSort.cpp becomes Selection Sort and recursive_bubble_sort.cpp becomes Recursive Bubble Sort."
+    },
+    {
+      "text": "Do not include file extensions, folder names, implementation details, or programming language names unless they are essential to identify the problem."
+    },
+    {
+      "text": "For an alternative solution to an existing problem, use: add: <Problem Name> alternative approach"
+    },
+    {
+      "text": "For a bug fix, use: fix: <Problem Name> <short description of the corrected issue>"
+    },
+    {
+      "text": "For an algorithmic optimization, use: optimize: <Problem Name> <short description of the optimization>"
+    },
+    {
+      "text": "For code restructuring, use: refactor: <Problem Name>"
+    },
+    {
+      "text": "For documentation-only changes, use: docs: <Topic or Problem Name>"
+    },
+    {
+      "text": "If multiple staged files belong to the same problem or algorithm, generate one commit message describing that problem."
+    },
+    {
+      "text": "If multiple staged files represent unrelated problems, generate one concise commit message summarizing the common DSA topic. Do not list every file or create multiple commit messages."
+    },
+    {
+      "text": "Prefer the actual problem or algorithm name over generic descriptions such as add solution, update code, modify files, implement function, or code changes."
+    },
+    {
+      "text": "Keep the commit message short, specific, and written in imperative repository style."
+    },
+    {
+      "text": "Do not end the commit message with a period."
+    },
+    {
+      "text": "Do not use emojis."
+    },
+    {
+      "text": "Do not add a commit body, description, bullet points, markdown, scope, or extra explanation."
+    },
+    {
+      "text": "Output exactly one line containing only the commit message."
+    },
+    {
+      "text": "Examples: solve: 0350 Intersection of Two Arrays II"
+    },
+    {
+      "text": "Examples: solve: 0509 Fibonacci Number"
+    },
+    {
+      "text": "Examples: solve: Selection Sort"
+    },
+    {
+      "text": "Examples: solve: Recursive Bubble Sort"
+    },
+    {
+      "text": "Examples: add: Intersection of Two Arrays II alternative approach"
+    },
+    {
+      "text": "Examples: fix: Reverse Integer overflow handling"
+    },
+    {
+      "text": "Examples: optimize: Prime Check reduce iteration to square root"
+    },
+    {
+      "text": "Examples: refactor: Selection Sort"
+    },
+    {
+      "text": "Examples: docs: Hashing"
     }
   ]
 }
